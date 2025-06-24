@@ -1,5 +1,7 @@
 # Escribe Chanchi - Editor de Markdown ✨
 
+![about-escribe-chanchi](https://github.com/user-attachments/assets/a400a351-5648-4979-a9ec-cd4f07d37565)
+
 Este es un editor de Markdown desarrollado en C++ con Qt, que incluye sistema de pestañas, plantillas, barra de herramientas mejorada, búsqueda avanzada y sistema optimizado de emojis. Y todas aquellas otras cosas que me sean útiles en algún u otro momento.
 
 ![GitHub](https://img.shields.io/badge/version-v1.6-blue) ![C++](https://img.shields.io/badge/language-C%2B%2B-blue) ![Qt](https://img.shields.io/badge/framework-Qt5%2FQt6-green) ![License](https://img.shields.io/badge/license-MIT-green)
@@ -70,6 +72,8 @@ sudo pacman -S base-devel qt5-base qt5-webkit cmark cmake git
 ```
 
 ## 💡 Cómo Usar el Editor
+
+![plantilla-escribe-chanchi](https://github.com/user-attachments/assets/754e2c5c-3f8d-4de4-b015-49c4181ba680)
 
 ### 📝 Crear y Editar Documentos
 1. **Nuevo documento**: Clic en "Nueva" o `Ctrl+N`
@@ -343,7 +347,9 @@ Este proyecto está bajo licencia MIT. Ver archivo `LICENSE` para más detalles.
 
 ---
 
-**EscribeChanchi v1.6** - Editor de Markdown moderno con barra de herramientas mejorada y sistema completo de búsqueda ✨
+![logo_escribe_chanchi](https://github.com/user-attachments/assets/07667a04-1324-41e6-9059-7443e8680d77)
+
+**EscribeChanchi v1.6** - Editor de Markdown para mis cosicas - Creado por entreunosyceros ✨
 
 **📦 Repositorio:** https://github.com/sapoclay/escribe-chanchi
 
