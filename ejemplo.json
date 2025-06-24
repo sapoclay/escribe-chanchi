@@ -1,7 +1,7 @@
 {
   "nombre": "Escribe Chanchi",
-  "versión": "1.0",
-  "descripción": "Editor de Markdown moderno con soporte para múltiples tipos de archivo",
+  "versión": "1.6",
+  "descripción": "Editor de Markdown con soporte para múltiples tipos de archivo",
   "características": [
     "Sistema de pestañas",
     "Vista previa en tiempo real",
@@ -24,6 +24,6 @@
     "cmake": "3.16+",
     "libcmark": "latest"
   },
-  "autor": "Equipo EscribeChanchi",
-  "licencia": "Open Source"
+  "autor": "entreunosyceros",
+  "licencia": "MIT"
 }
