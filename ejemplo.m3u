@@ -1,0 +1,15 @@
+# Archivo de prueba M3U
+# Escribe Chanchi - Lista de reproducción de ejemplo
+
+#EXTM3U
+#EXTINF:180,Canción 1 - Artista A
+/music/song1.mp3
+
+#EXTINF:240,Canción 2 - Artista B  
+/music/song2.mp3
+
+#EXTINF:200,Canción 3 - Artista C
+/music/song3.mp3
+
+# Comentario: Esta es una lista de reproducción de prueba
+# para demostrar el soporte de archivos .m3u en Escribe Chanchi

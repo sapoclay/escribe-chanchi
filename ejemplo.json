@@ -1,0 +1,29 @@
+{
+  "nombre": "Escribe Chanchi",
+  "versión": "1.0",
+  "descripción": "Editor de Markdown moderno con soporte para múltiples tipos de archivo",
+  "características": [
+    "Sistema de pestañas",
+    "Vista previa en tiempo real",
+    "Soporte múltiples formatos",
+    "Modo oscuro/claro",
+    "Bandeja del sistema",
+    "Exportación HTML/PDF"
+  ],
+  "tipos_archivo_soportados": {
+    "markdown": [".md"],
+    "texto": [".txt"],
+    "listas": [".m3u"],
+    "codigo": [".cpp", ".h", ".js", ".py"],
+    "web": [".html", ".css"],
+    "datos": [".xml", ".json"]
+  },
+  "requisitos": {
+    "sistema": "Linux",
+    "qt": "6.x",
+    "cmake": "3.16+",
+    "libcmark": "latest"
+  },
+  "autor": "Equipo EscribeChanchi",
+  "licencia": "Open Source"
+}
