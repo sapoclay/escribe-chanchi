@@ -27,7 +27,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_MarkdownEditor_t {
-    uint offsetsAndSizes[86];
+    uint offsetsAndSizes[100];
     char stringdata0[15];
     char stringdata1[15];
     char stringdata2[1];
@@ -56,21 +56,28 @@ struct qt_meta_stringdata_MarkdownEditor_t {
     char stringdata25[17];
     char stringdata26[14];
     char stringdata27[15];
-    char stringdata28[7];
-    char stringdata29[17];
-    char stringdata30[9];
-    char stringdata31[6];
-    char stringdata32[16];
-    char stringdata33[11];
-    char stringdata34[16];
-    char stringdata35[11];
+    char stringdata28[12];
+    char stringdata29[15];
+    char stringdata30[18];
+    char stringdata31[9];
+    char stringdata32[13];
+    char stringdata33[12];
+    char stringdata34[11];
+    char stringdata35[7];
     char stringdata36[17];
-    char stringdata37[13];
-    char stringdata38[11];
-    char stringdata39[18];
-    char stringdata40[34];
-    char stringdata41[7];
-    char stringdata42[16];
+    char stringdata37[9];
+    char stringdata38[6];
+    char stringdata39[16];
+    char stringdata40[11];
+    char stringdata41[16];
+    char stringdata42[11];
+    char stringdata43[17];
+    char stringdata44[13];
+    char stringdata45[11];
+    char stringdata46[18];
+    char stringdata47[34];
+    char stringdata48[7];
+    char stringdata49[16];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_MarkdownEditor_t::offsetsAndSizes) + ofs), len 
@@ -104,21 +111,28 @@ Q_CONSTINIT static const qt_meta_stringdata_MarkdownEditor_t qt_meta_stringdata_
         QT_MOC_LITERAL(311, 16),  // "toggleFullScreen"
         QT_MOC_LITERAL(328, 13),  // "showTemplates"
         QT_MOC_LITERAL(342, 14),  // "createTemplate"
-        QT_MOC_LITERAL(357, 6),  // "newTab"
-        QT_MOC_LITERAL(364, 16),  // "openFileInNewTab"
-        QT_MOC_LITERAL(381, 8),  // "closeTab"
-        QT_MOC_LITERAL(390, 5),  // "index"
-        QT_MOC_LITERAL(396, 15),  // "closeCurrentTab"
-        QT_MOC_LITERAL(412, 10),  // "tabChanged"
-        QT_MOC_LITERAL(423, 15),  // "saveCurrentFile"
-        QT_MOC_LITERAL(439, 10),  // "saveFileAs"
-        QT_MOC_LITERAL(450, 16),  // "documentModified"
-        QT_MOC_LITERAL(467, 12),  // "showFromTray"
-        QT_MOC_LITERAL(480, 10),  // "hideToTray"
-        QT_MOC_LITERAL(491, 17),  // "trayIconActivated"
-        QT_MOC_LITERAL(509, 33),  // "QSystemTrayIcon::ActivationRe..."
-        QT_MOC_LITERAL(543, 6),  // "reason"
-        QT_MOC_LITERAL(550, 15)   // "exitApplication"
+        QT_MOC_LITERAL(357, 11),  // "insertEmoji"
+        QT_MOC_LITERAL(369, 14),  // "showFindDialog"
+        QT_MOC_LITERAL(384, 17),  // "showReplaceDialog"
+        QT_MOC_LITERAL(402, 8),  // "findNext"
+        QT_MOC_LITERAL(411, 12),  // "findPrevious"
+        QT_MOC_LITERAL(424, 11),  // "replaceNext"
+        QT_MOC_LITERAL(436, 10),  // "replaceAll"
+        QT_MOC_LITERAL(447, 6),  // "newTab"
+        QT_MOC_LITERAL(454, 16),  // "openFileInNewTab"
+        QT_MOC_LITERAL(471, 8),  // "closeTab"
+        QT_MOC_LITERAL(480, 5),  // "index"
+        QT_MOC_LITERAL(486, 15),  // "closeCurrentTab"
+        QT_MOC_LITERAL(502, 10),  // "tabChanged"
+        QT_MOC_LITERAL(513, 15),  // "saveCurrentFile"
+        QT_MOC_LITERAL(529, 10),  // "saveFileAs"
+        QT_MOC_LITERAL(540, 16),  // "documentModified"
+        QT_MOC_LITERAL(557, 12),  // "showFromTray"
+        QT_MOC_LITERAL(570, 10),  // "hideToTray"
+        QT_MOC_LITERAL(581, 17),  // "trayIconActivated"
+        QT_MOC_LITERAL(599, 33),  // "QSystemTrayIcon::ActivationRe..."
+        QT_MOC_LITERAL(633, 6),  // "reason"
+        QT_MOC_LITERAL(640, 15)   // "exitApplication"
     },
     "MarkdownEditor",
     "toggleDarkMode",
@@ -148,6 +162,13 @@ Q_CONSTINIT static const qt_meta_stringdata_MarkdownEditor_t qt_meta_stringdata_
     "toggleFullScreen",
     "showTemplates",
     "createTemplate",
+    "insertEmoji",
+    "showFindDialog",
+    "showReplaceDialog",
+    "findNext",
+    "findPrevious",
+    "replaceNext",
+    "replaceAll",
     "newTab",
     "openFileInNewTab",
     "closeTab",
@@ -173,7 +194,7 @@ Q_CONSTINIT static const uint qt_meta_data_MarkdownEditor[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-      38,   14, // methods
+      45,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -181,44 +202,51 @@ Q_CONSTINIT static const uint qt_meta_data_MarkdownEditor[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,  242,    2, 0x08,    1 /* Private */,
-       3,    0,  243,    2, 0x08,    2 /* Private */,
-       4,    0,  244,    2, 0x08,    3 /* Private */,
-       5,    0,  245,    2, 0x08,    4 /* Private */,
-       6,    0,  246,    2, 0x08,    5 /* Private */,
-       7,    0,  247,    2, 0x08,    6 /* Private */,
-       8,    0,  248,    2, 0x08,    7 /* Private */,
-       9,    0,  249,    2, 0x08,    8 /* Private */,
-      10,    0,  250,    2, 0x08,    9 /* Private */,
-      11,    0,  251,    2, 0x08,   10 /* Private */,
-      12,    0,  252,    2, 0x08,   11 /* Private */,
-      13,    0,  253,    2, 0x08,   12 /* Private */,
-      14,    0,  254,    2, 0x08,   13 /* Private */,
-      15,    0,  255,    2, 0x08,   14 /* Private */,
-      16,    0,  256,    2, 0x08,   15 /* Private */,
-      17,    0,  257,    2, 0x08,   16 /* Private */,
-      18,    0,  258,    2, 0x08,   17 /* Private */,
-      19,    0,  259,    2, 0x08,   18 /* Private */,
-      20,    0,  260,    2, 0x08,   19 /* Private */,
-      21,    0,  261,    2, 0x08,   20 /* Private */,
-      22,    0,  262,    2, 0x08,   21 /* Private */,
-      23,    0,  263,    2, 0x08,   22 /* Private */,
-      24,    0,  264,    2, 0x08,   23 /* Private */,
-      25,    0,  265,    2, 0x08,   24 /* Private */,
-      26,    0,  266,    2, 0x08,   25 /* Private */,
-      27,    0,  267,    2, 0x08,   26 /* Private */,
-      28,    0,  268,    2, 0x08,   27 /* Private */,
-      29,    0,  269,    2, 0x08,   28 /* Private */,
-      30,    1,  270,    2, 0x08,   29 /* Private */,
-      32,    0,  273,    2, 0x08,   31 /* Private */,
-      33,    1,  274,    2, 0x08,   32 /* Private */,
-      34,    0,  277,    2, 0x08,   34 /* Private */,
-      35,    0,  278,    2, 0x08,   35 /* Private */,
-      36,    0,  279,    2, 0x08,   36 /* Private */,
-      37,    0,  280,    2, 0x08,   37 /* Private */,
-      38,    0,  281,    2, 0x08,   38 /* Private */,
-      39,    1,  282,    2, 0x08,   39 /* Private */,
-      42,    0,  285,    2, 0x08,   41 /* Private */,
+       1,    0,  284,    2, 0x08,    1 /* Private */,
+       3,    0,  285,    2, 0x08,    2 /* Private */,
+       4,    0,  286,    2, 0x08,    3 /* Private */,
+       5,    0,  287,    2, 0x08,    4 /* Private */,
+       6,    0,  288,    2, 0x08,    5 /* Private */,
+       7,    0,  289,    2, 0x08,    6 /* Private */,
+       8,    0,  290,    2, 0x08,    7 /* Private */,
+       9,    0,  291,    2, 0x08,    8 /* Private */,
+      10,    0,  292,    2, 0x08,    9 /* Private */,
+      11,    0,  293,    2, 0x08,   10 /* Private */,
+      12,    0,  294,    2, 0x08,   11 /* Private */,
+      13,    0,  295,    2, 0x08,   12 /* Private */,
+      14,    0,  296,    2, 0x08,   13 /* Private */,
+      15,    0,  297,    2, 0x08,   14 /* Private */,
+      16,    0,  298,    2, 0x08,   15 /* Private */,
+      17,    0,  299,    2, 0x08,   16 /* Private */,
+      18,    0,  300,    2, 0x08,   17 /* Private */,
+      19,    0,  301,    2, 0x08,   18 /* Private */,
+      20,    0,  302,    2, 0x08,   19 /* Private */,
+      21,    0,  303,    2, 0x08,   20 /* Private */,
+      22,    0,  304,    2, 0x08,   21 /* Private */,
+      23,    0,  305,    2, 0x08,   22 /* Private */,
+      24,    0,  306,    2, 0x08,   23 /* Private */,
+      25,    0,  307,    2, 0x08,   24 /* Private */,
+      26,    0,  308,    2, 0x08,   25 /* Private */,
+      27,    0,  309,    2, 0x08,   26 /* Private */,
+      28,    0,  310,    2, 0x08,   27 /* Private */,
+      29,    0,  311,    2, 0x08,   28 /* Private */,
+      30,    0,  312,    2, 0x08,   29 /* Private */,
+      31,    0,  313,    2, 0x08,   30 /* Private */,
+      32,    0,  314,    2, 0x08,   31 /* Private */,
+      33,    0,  315,    2, 0x08,   32 /* Private */,
+      34,    0,  316,    2, 0x08,   33 /* Private */,
+      35,    0,  317,    2, 0x08,   34 /* Private */,
+      36,    0,  318,    2, 0x08,   35 /* Private */,
+      37,    1,  319,    2, 0x08,   36 /* Private */,
+      39,    0,  322,    2, 0x08,   38 /* Private */,
+      40,    1,  323,    2, 0x08,   39 /* Private */,
+      41,    0,  326,    2, 0x08,   41 /* Private */,
+      42,    0,  327,    2, 0x08,   42 /* Private */,
+      43,    0,  328,    2, 0x08,   43 /* Private */,
+      44,    0,  329,    2, 0x08,   44 /* Private */,
+      45,    0,  330,    2, 0x08,   45 /* Private */,
+      46,    1,  331,    2, 0x08,   46 /* Private */,
+      49,    0,  334,    2, 0x08,   48 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -249,15 +277,22 @@ Q_CONSTINIT static const uint qt_meta_data_MarkdownEditor[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,   31,
-    QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,   31,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 40,   41,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,   38,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,   38,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 47,   48,
     QMetaType::Void,
 
        0        // eod
@@ -324,6 +359,20 @@ Q_CONSTINIT const QMetaObject MarkdownEditor::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'createTemplate'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'insertEmoji'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'showFindDialog'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'showReplaceDialog'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'findNext'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'findPrevious'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'replaceNext'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'replaceAll'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'newTab'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'openFileInNewTab'
@@ -387,18 +436,25 @@ void MarkdownEditor::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 23: _t->toggleFullScreen(); break;
         case 24: _t->showTemplates(); break;
         case 25: _t->createTemplate(); break;
-        case 26: _t->newTab(); break;
-        case 27: _t->openFileInNewTab(); break;
-        case 28: _t->closeTab((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 29: _t->closeCurrentTab(); break;
-        case 30: _t->tabChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 31: _t->saveCurrentFile(); break;
-        case 32: _t->saveFileAs(); break;
-        case 33: _t->documentModified(); break;
-        case 34: _t->showFromTray(); break;
-        case 35: _t->hideToTray(); break;
-        case 36: _t->trayIconActivated((*reinterpret_cast< std::add_pointer_t<QSystemTrayIcon::ActivationReason>>(_a[1]))); break;
-        case 37: _t->exitApplication(); break;
+        case 26: _t->insertEmoji(); break;
+        case 27: _t->showFindDialog(); break;
+        case 28: _t->showReplaceDialog(); break;
+        case 29: _t->findNext(); break;
+        case 30: _t->findPrevious(); break;
+        case 31: _t->replaceNext(); break;
+        case 32: _t->replaceAll(); break;
+        case 33: _t->newTab(); break;
+        case 34: _t->openFileInNewTab(); break;
+        case 35: _t->closeTab((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 36: _t->closeCurrentTab(); break;
+        case 37: _t->tabChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 38: _t->saveCurrentFile(); break;
+        case 39: _t->saveFileAs(); break;
+        case 40: _t->documentModified(); break;
+        case 41: _t->showFromTray(); break;
+        case 42: _t->hideToTray(); break;
+        case 43: _t->trayIconActivated((*reinterpret_cast< std::add_pointer_t<QSystemTrayIcon::ActivationReason>>(_a[1]))); break;
+        case 44: _t->exitApplication(); break;
         default: ;
         }
     }
@@ -423,13 +479,13 @@ int MarkdownEditor::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 38)
+        if (_id < 45)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 38;
+        _id -= 45;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 38)
+        if (_id < 45)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 38;
+        _id -= 45;
     }
     return _id;
 }

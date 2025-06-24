@@ -1,387 +1,350 @@
-# Escribe Chanchi - Editor de Markdown
+# Escribe Chanchi - Editor de Markdown ✨
 
-Un editor de Markdown moderno y potente desarrollado en C++ con Qt6, que incluye sistema de pestañas, plantillas, renderizado mejorado de tablas, barra de herramientas visual, pantalla completa e integración con la bandeja del sistema.
+Este es un editor de Markdown desarrollado en C++ con Qt, que incluye sistema de pestañas, plantillas, barra de herramientas mejorada, búsqueda avanzada y sistema optimizado de emojis. Y todas aquellas otras cosas que me sean útiles en algún u otro momento.
 
-## 🚀 Características
+![GitHub](https://img.shields.io/badge/version-v1.6-blue) ![C++](https://img.shields.io/badge/language-C%2B%2B-blue) ![Qt](https://img.shields.io/badge/framework-Qt5%2FQt6-green) ![License](https://img.shields.io/badge/license-MIT-green)
 
-- **Sistema de pestañas** - Múltiples archivos abiertos simultáneamente
-- **Múltiples formatos** - Soporte para .md, .txt, .m3u, .cpp, .js, .py, .html, .css, .xml, .json
-- **Renderizado de tablas** - Parser manual mejorado para tablas Markdown  
-- **Numeración de líneas** - Alternador visual de numeración
-- **Plantillas** - Plantillas predefinidas y personalizadas
-- **Barra de herramientas** - Iconos generados dinámicamente con tooltips
-- **Temas** - Modo claro y oscuro
-- **Exportación** - HTML y PDF
-- **Pantalla completa** - Inicio en pantalla completa para máxima productividad
-- **Bandeja del sistema** - Minimizado inteligente e integración con el sistema
-- **Vista previa en tiempo real** - Con Qt6 WebEngine
-
-## 📁 Tipos de Archivo Soportados
-
-### **Funcionalidad Completa (Vista previa + Editor)**
-- **`.md`** - Archivos Markdown con renderizado en tiempo real
-
-### **Solo Editor (Optimizado para código/texto)**
-- **`.txt`** - Archivos de texto plano
-- **`.m3u`** - Listas de reproducción M3U  
-- **`.cpp`, `.h`, `.hpp`, `.c`** - Código C/C++
-- **`.js`** - JavaScript
-- **`.py`** - Python
-- **`.html`, `.htm`** - HTML
-- **`.css`** - Hojas de estilo CSS
-- **`.xml`** - Archivos XML
-- **`.json`** - Archivos JSON
-- **`*`** - Cualquier archivo de texto (sin filtro)
-
-## 🛠️ Instalación y Compilación
-
-### Requisitos del Sistema
-- **Sistema Operativo:** Linux (Ubuntu/Debian recomendado)
-- **Compilador:** GCC con soporte C++17 o superior
-- **Qt Version:** Qt6.x (Qt6.4+ recomendado)
-- **CMake:** 3.16 o superior
-- **RAM:** Mínimo 1GB
-- **Espacio en disco:** ~100MB para compilación
-
-### 1. Instalación de Dependencias
-
-#### Ubuntu/Debian (Recomendado):
+## 🎯 TL;DR (Resumen Ultra-Rápido)
 ```bash
-# Actualizar repositorios
+# 1. Clonar repositorio
+git clone https://github.com/sapoclay/escribe-chanchi.git
+cd escribe-chanchi
+
+# 2. Instalar dependencias (Ubuntu/Debian)
 sudo apt update
+sudo apt install build-essential qt5-default libqt5webkit5-dev libcmark-dev cmake
 
-# Instalar Qt6 y herramientas de desarrollo
-sudo apt install qt6-base-dev qt6-tools-dev qt6-webengine-dev
+# 3. Compilar automáticamente
+./compilar.sh
 
-# Instalar CMake y herramientas de compilación
-sudo apt install cmake build-essential
+# 4. Ejecutar automáticamente  
+./ejecutar.sh
 
-# Instalar libcmark para procesamiento avanzado de Markdown
-sudo apt install libcmark-dev
-
-# Instalar pkg-config (requerido por CMake para encontrar libcmark)
-sudo apt install pkg-config
+# ¡Listo! 🚀 El editor se abre maximizado y listo para usar
 ```
 
-#### Verificar instalación:
+## 🚀 Instalación y Uso
+
+### 📥 Paso 1: Clonar el Repositorio
 ```bash
-# Verificar Qt6
-qmake6 --version
-
-# Verificar CMake
-cmake --version
-
-# Verificar GCC
-gcc --version
-
-# Verificar libcmark
-pkg-config --modversion libcmark
+git clone https://github.com/sapoclay/escribe-chanchi.git
+cd escribe-chanchi
 ```
 
-### 2. Compilación del Proyecto
+### 📦 Paso 2: Instalar Dependencias
 
-#### Método Principal: CMake (Recomendado)
+**Ubuntu/Debian:**
 ```bash
-# 1. Navegar al directorio del proyecto
-cd /ruta/al/proyecto/markdown
+sudo apt update
+sudo apt install build-essential qt5-default libqt5webkit5-dev libcmark-dev cmake git
+```
 
-# 2. Crear directorio de compilación
-mkdir -p build
-cd build
+**Fedora/CentOS:**
+```bash
+sudo dnf install gcc-c++ qt5-qtbase-devel qt5-qtwebkit-devel libcmark-devel cmake git
+```
 
-# 3. Configurar el proyecto con CMake
+**Arch Linux:**
+```bash
+sudo pacman -S base-devel qt5-base qt5-webkit cmark cmake git
+```
+
+### 🔨 Paso 3: Compilar
+```bash
+# Compilar automáticamente (recomendado - detecta el mejor método)
+./compilar.sh
+
+# Opciones avanzadas:
+./compilar.sh auto      # Automático (igual que sin parámetros)
+./compilar.sh cmake     # Forzar CMake → build/Escribe_Chanchi
+./compilar.sh make      # Forzar Makefile → markdown_editor
+./compilar.sh clean     # Limpiar y recompilar todo
+```
+
+### 🚀 Paso 4: Ejecutar
+```bash
+# Ejecutar automáticamente (detecta el ejecutable disponible)
+./ejecutar.sh
+
+# El editor se abrirá maximizado y listo para usar
+```
+
+## 💡 Cómo Usar el Editor
+
+### 📝 Crear y Editar Documentos
+1. **Nuevo documento**: Clic en "Nueva" o `Ctrl+N`
+2. **Abrir archivo**: Clic en 📁 o `Ctrl+O`
+3. **Escribir texto**: ¡Simplemente escribe!
+4. **Guardar**: Clic en 💾 o `Ctrl+S`
+
+### 🔍 Buscar y Reemplazar (NUEVO)
+1. **Buscar**: Clic en 🔍 o `Ctrl+F`
+2. **Reemplazar**: Clic en 🔄 o `Ctrl+H`
+3. **Navegar**: Botones ◀ ▶ o `F3`/`Shift+F3`
+4. **Opciones**: Sensible a mayúsculas, solo palabras completas
+
+### ✍️ Formato de Texto
+- **Negrita**: Selecciona texto → Clic en "B" o `Ctrl+B`
+- **Cursiva**: Selecciona texto → Clic en "I" o `Ctrl+I`
+- **Código**: Selecciona texto → Clic en "</>" o `Ctrl+``
+
+### � Insertar Emojis (76 emojis optimizados)
+- **Abrir selector**: Clic en ":)" o `Ctrl+E`
+- **Elegir emoji**: Clic en el emoji deseado
+- **Se inserta automáticamente** en el texto
+
+### � Cambiar Tema
+- **Modo oscuro/claro**: Clic en 🌙 o `F11`
+
+## 🎯 Características Principales
+
+### ✨ **Funcionalidades Principales**
+- ✅ **Sistema de pestañas** - Múltiples archivos simultáneamente
+- ✅ **Búsqueda y reemplazo avanzado** - Con opciones de mayúsculas y palabras completas
+- ✅ **Barra de herramientas mejorada** - Iconos descriptivos y búsqueda integrada
+- ✅ **76 emojis optimizados** - Ultra-básicos y universalmente compatibles
+- ✅ **Plantillas predefinidas** - Para blogs, documentos técnicos, README
+- ✅ **Modo claro/oscuro** - Alternancia con F11
+- ✅ **Vista previa en tiempo real** - Para archivos Markdown
+- ✅ **Exportación** - A HTML y PDF
+- ✅ **Bandeja del sistema** - Minimizado inteligente
+
+### 📁 **Formatos Soportados**
+- **`.md`** - Markdown con vista previa en tiempo real
+- **`.txt`, `.cpp`, `.js`, `.py`, `.html`, `.css`, `.xml`, `.json`** - Editor de texto
+- **Cualquier archivo de texto** - Edición básica
+
+## ⌨️ Atajos de Teclado
+
+| Función | Atajo | Descripción |
+|---------|-------|-------------|
+| **� Archivos** | | |
+| Nueva pestaña | `Ctrl+N` | Crear nuevo documento |
+| Abrir archivo | `Ctrl+O` | Abrir archivo existente |
+| Guardar | `Ctrl+S` | Guardar documento actual |
+| Guardar como | `Ctrl+Shift+S` | Guardar con nuevo nombre |
+| **🔍 Búsqueda** | | |
+| Buscar | `Ctrl+F` | Abrir diálogo de búsqueda |
+| Buscar y reemplazar | `Ctrl+H` | Abrir diálogo de reemplazo |
+| Buscar siguiente | `F3` | Ir al siguiente resultado |
+| Buscar anterior | `Shift+F3` | Ir al resultado anterior |
+| **✍️ Formato** | | |
+| Negrita | `Ctrl+B` | Texto en **negrita** |
+| Cursiva | `Ctrl+I` | Texto en *cursiva* |
+| Código | `Ctrl+`` | Texto en `código` |
+| **🎨 Especiales** | | |
+| Insertar emoji | `Ctrl+E` | Abrir selector de emojis |
+| Modo oscuro | `F11` | Alternar tema claro/oscuro |
+| Pantalla completa | `F10` | Ocultar barras de ventana |
+
+## 🔧 Compilación Avanzada
+
+### Detección Automática (Recomendado)
+```bash
+./compilar.sh           # Detecta automáticamente CMake o Makefile
+./compilar.sh auto      # Mismo resultado
+./compilar.sh clean     # Limpiar y recompilar todo
+```
+
+### Métodos Específicos
+```bash
+# Forzar CMake (genera: build/Escribe_Chanchi)
+./compilar.sh cmake
+
+# Forzar Makefile tradicional (genera: markdown_editor)
+./compilar.sh make
+```
+
+### Manual - CMake
+```bash
+mkdir -p build && cd build
 cmake ..
-
-# 4. Compilar el proyecto
 make
-
-# 5. El ejecutable se creará como 'Escribe_Chanchi'
+# Genera: build/Escribe_Chanchi
 ```
 
-#### Método Alternativo: Script automatizado
+### Manual - Makefile
 ```bash
-# Usar el script incluido (más fácil)
+make clean && make
+# Genera: markdown_editor
+```
+
+## � Solución de Problemas
+
+### ❌ Error: "No se encontró ejecutable"
+```bash
+# Recompilar automáticamente
+./compilar.sh clean
+
+# Luego ejecutar
 ./ejecutar.sh
 ```
 
-### 3. Ejecución
-
-#### Ejecución directa:
+### ❌ Error: "Qt no encontrado"
 ```bash
-# Desde el directorio build
-cd build
-./Escribe_Chanchi
+# Ubuntu/Debian
+sudo apt install qt5-default libqt5webkit5-dev
 
-# O ejecutar en segundo plano
-./Escribe_Chanchi &
+# Verificar instalación
+qmake --version
 ```
 
-### 4. Funcionalidades de la Aplicación
-
-#### 🖥️ **Gestión de Ventana**
-- La aplicación se inicia **MAXIMIZADA** (no en pantalla completa)
-- Permite usar los botones de ventana normales (minimizar/restaurar/cerrar)
-- Se puede desmaximizar haciendo clic en el botón o doble clic en la barra de título
-- **F11:** Alternar pantalla completa verdadera (oculta barras)
-- **Menú Ver > Pantalla completa:** Misma funcionalidad que F11
-- **Botón toolbar:** Icono específico para pantalla completa
-
-#### 🔔 **Bandeja del Sistema**
-- Icono visible en la bandeja del sistema
-- **Clic izquierdo:** Mostrar/ocultar ventana
-- **Clic derecho:** Menú contextual con opciones
-- **Minimizado inteligente:** Al cerrar se minimiza a bandeja (no se cierra)
-
-#### ✍️ **Atajos de Teclado**
-- **Ctrl+N:** Nueva pestaña
-- **Ctrl+O:** Abrir archivo
-- **Ctrl+S:** Guardar archivo
-- **Ctrl+B:** Negrita
-- **Ctrl+I:** Cursiva
-- **Ctrl+T:** Insertar tabla
-- **F11:** Alternar pantalla completa
-- **Ctrl+H:** Encabezado
-- **F12:** Alternar vista previa
-
-### 5. Estructura del Proyecto
-```
-├── main.cpp                 # Punto de entrada
-├── markdow_editor.h/.cpp    # Editor principal con todas las funcionalidades
-├── mainwindow.h/.cpp        # Ventana simplificada (legacy)
-├── markdown_formatter.h/.cpp # Formateador de Markdown
-├── template_manager.h/.cpp   # Gestor de plantillas
-├── resources.qrc           # Recursos (iconos, imágenes)
-├── templates/              # Plantillas predefinidas
-│   ├── articulo_blog.md
-│   ├── documento_tecnico.md
-│   └── readme_proyecto.md
-├── img/                    # Recursos gráficos
-│   └── logo.png           # Logo de la aplicación
-├── CMakeLists.txt         # Configuración de compilación CMake
-├── ejecutar.sh            # Script de ejecución mejorado
-└── README.md              # Este archivo
-```
-
-### 6. Limpieza del Proyecto
+### ❌ Error: "libcmark no encontrado"
 ```bash
-# Limpiar archivos de compilación
-cd build
-make clean
-
-# Limpiar completamente (desde directorio raíz)
-rm -rf build
-```
-
-### 7. Solución de Problemas
-
-#### 🔧 **Problemas Comunes**
-
-**Error: "Qt6 not found"**
-```bash
-# Verificar que Qt6 esté instalado
-dpkg -l | grep qt6
-
-# Si no está instalado
-sudo apt install qt6-base-dev qt6-tools-dev qt6-webengine-dev
-```
-
-**Error: "libcmark not found"**
-```bash
-# Instalar libcmark-dev
-sudo apt install libcmark-dev
+# Ubuntu/Debian
+sudo apt install libcmark-dev pkg-config
 
 # Verificar instalación
 pkg-config --modversion libcmark
 ```
 
-**Error: "CMake version too old"**
-```bash
-# Verificar versión de CMake
-cmake --version
+### ❌ La búsqueda no encuentra texto que existe
+- Verificar opciones "Sensible a mayúsculas" y "Solo palabras completas"
+- Asegurarse de que no hay espacios adicionales en el texto de búsqueda
 
-# Si es menor a 3.16, actualizar
-sudo apt install cmake
+### ❌ Los iconos no se ven correctamente
+- Los nuevos iconos son gráficos dibujados, no dependen de fuentes Unicode
+- Si persisten problemas: `./compilar.sh clean && ./compilar.sh`
+
+### ❌ La aplicación se abre maximizada
+- Esto es comportamiento normal y deseado
+- Para desmaximizar: Usa el botón maximizar/restaurar o doble clic en la barra de título
+
+## 🎨 Funcionalidades Especiales
+
+### 🔍 **Sistema de Búsqueda y Reemplazo**
+Acceso rápido:
+- `Ctrl+F` - Buscar texto
+- `Ctrl+H` - Buscar y reemplazar
+- `F3` - Buscar siguiente
+- `Shift+F3` - Buscar anterior
+- Botones 🔍 🔄 ◀ ▶ en la barra de herramientas
+
+**Características:**
+- ✅ **Búsqueda en tiempo real** con resaltado inmediato
+- ✅ **Navegación circular** - Continúa desde inicio/final del documento
+- ✅ **Opciones avanzadas:** Sensible a mayúsculas, solo palabras completas
+- ✅ **Reemplazo individual o masivo** con confirmación
+- ✅ **Diálogos no modales** - Permite editar mientras se busca
+
+### 😀 **Sistema de Emojis Optimizado**
+**76 emojis ultra-básicos y universalmente compatibles**
+
+Acceso: `Ctrl+E` o botón :) en la barra de herramientas
+
+**Filosofía:** Calidad sobre cantidad - Menos emojis, pero todos funcionan perfectamente.
+
+**Ejemplos incluidos:**
+- **Caras:** 😀 😃 😄 😁 😆 😊 😍 😘 😎 😛 😐 😒 😔 😢 😭 😠 😡 😳 😴 😷
+- **Corazones:** ❤ 💛 💚 💙 💜 🖤 💔 💕 💖 💗
+- **Símbolos:** ⭐ ✨ 🌟 ☀ 🌙 ✅ ❌ ⭕ ❗ ❓ 💯
+
+### 🔧 **Barra de Herramientas Mejorada**
+**Completamente renovada con iconos descriptivos dibujados con QPainter**
+
+**Nuevas características:**
+- ✅ **Iconos gráficos descriptivos** - No dependen de fuentes Unicode
+- ✅ **Botones de búsqueda integrados** - Acceso directo a búsqueda/reemplazo
+- ✅ **Colores diferenciados** - Cada función tiene su color distintivo
+- ✅ **Organización por secciones:** Archivos, Búsqueda, Formato, Estructura, etc.
+- ✅ **Tooltips informativos** - Cada botón incluye descripción y atajo
+
+### Interfaz principal
+- **Sistema de pestañas** para múltiples archivos
+- **Barra de herramientas renovada** con iconos descriptivos
+- **Vista previa en tiempo real** de Markdown
+- **Modo claro y oscuro** disponible
+
+### Características destacadas
+- **🔍 Sistema de búsqueda avanzado** con opciones de mayúsculas y palabras completas
+- **😀 76 emojis optimizados** universalmente compatibles
+- **📝 Plantillas predefinidas** para diferentes tipos de documentos
+- **🔧 Bandeja del sistema** con minimizado inteligente
+
+*[Las capturas de pantalla se agregarán próximamente]*
+
+## �📂 Estructura del proyecto
+```
+├── compilar.sh              # Script de compilación inteligente
+├── ejecutar.sh              # Script de ejecución inteligente
+├── markdow_editor.cpp/.h    # Editor principal con todas las funcionalidades
+├── markdown_formatter.cpp/.h # Formateador de Markdown
+├── template_manager.cpp/.h   # Gestor de plantillas
+├── build/                   # Directorio de compilación CMake
+│   └── Escribe_Chanchi     # Ejecutable generado por CMake
+├── markdown_editor          # Ejecutable generado por Makefile
+├── templates/               # Plantillas predefinidas
+│   ├── articulo_blog.md
+│   ├── documento_tecnico.md
+│   └── readme_proyecto.md
+├── PRUEBA_*.sh             # Scripts de prueba automatizada
+├── CMakeLists.txt          # Configuración CMake
+├── Makefile                # Makefile tradicional
+└── README.md               # Este archivo
 ```
 
-**Error de compilación: "QRegExp not found"**
-- ✅ **Ya corregido:** El código ha sido actualizado a Qt6 usando `QRegularExpression`
+## 📝 Notas de Desarrollo
 
-**Problema: "No se muestra el icono en la bandeja"**
+### Versión Actual (v1.6)
+- ✅ **Barra de herramientas completamente renovada** con iconos descriptivos
+- ✅ **Botones de búsqueda integrados** en la barra de herramientas  
+- ✅ **Scripts inteligentes** de compilación y ejecución automática
+- ✅ **Eliminación de dependencias Unicode** para iconos problemáticos
+- ✅ **Documentación reorganizada** y simplificada
+
+### Arquitectura Técnica
+- **Lenguaje:** C++17 con librerías Qt5/Qt6
+- **Build System:** CMake (recomendado) + Makefile tradicional
+- **Dependencias:** Qt, libcmark, build-essential
+- **Patrón:** Aplicación de escritorio Qt con arquitectura MVC
+
+## 🤝 Contribuciones
+
+¡Las contribuciones son bienvenidas! Este proyecto está abierto a mejoras y nuevas funcionalidades.
+
+### Cómo Contribuir
+1. **Fork** el repositorio
+2. Crear una **rama** para tu funcionalidad (`git checkout -b feature/nueva-funcionalidad`)
+3. **Commit** tus cambios (`git commit -am 'Agregar nueva funcionalidad'`)
+4. **Push** a la rama (`git push origin feature/nueva-funcionalidad`)
+5. Crear un **Pull Request**
+
+### Áreas de Contribución
+- 🐛 **Corrección de bugs**
+- ✨ **Nuevas funcionalidades**
+- 📚 **Mejoras en documentación**
+- 🎨 **Mejoras en UI/UX**
+- 🧪 **Tests y pruebas**
+- 🌍 **Traducciones**
+
+### Desarrollo Local
 ```bash
-# Verificar que el sistema soporte bandeja del sistema
-echo $XDG_CURRENT_DESKTOP
+# Clonar tu fork
+git clone https://github.com/TU_USUARIO/escribe-chanchi.git
+cd escribe-chanchi
 
-# Para GNOME, instalar extensión de bandeja
-# Para otros escritorios, generalmente funciona por defecto
-```
+# Compilar en modo desarrollo
+./compilar.sh clean
+./compilar.sh
 
-#### 📊 **Versiones Testadas**
-
-| Sistema | Qt Version | CMake | Estado |
-|---------|------------|-------|--------|
-| Ubuntu 22.04+ | Qt 6.4+ | 3.16+ | ✅ Funcionando |
-| Ubuntu 20.04 | Qt 6.2+ | 3.16+ | ✅ Funcionando |
-| Debian 11+ | Qt 6.2+ | 3.18+ | ✅ Funcionando |
-
-### 8. Desarrollo y Contribución
-
-#### 🛠️ **Estructura del Código**
-
-```cpp
-// Arquitectura principal
-main.cpp                    // Punto de entrada
-├── MarkdownEditor          // Clase principal (markdow_editor.h/.cpp)
-    ├── Sistema de pestañas
-    ├── Barra de herramientas
-    ├── Bandeja del sistema
-    └── Gestión de archivos
-├── MarkdownFormatter       // Formateador (markdown_formatter.h/.cpp)  
-├── TemplateManager        // Plantillas (template_manager.h/.cpp)
-└── MainWindow             // Ventana simple (legacy - mainwindow.h/.cpp)
-```
-
-#### 📝 **Modificar el Proyecto**
-
-1. **Agregar nuevas funcionalidades:**
-   - Editar `markdow_editor.h` para declaraciones
-   - Implementar en `markdow_editor.cpp`
-   - Actualizar `CMakeLists.txt` si se agregan archivos
-
-2. **Recompilar después de cambios:**
-   ```bash
-   cd build
-   make
-   ```
-
-3. **Limpiar y recompilar completamente:**
-   ```bash
-   rm -rf build
-   mkdir build && cd build
-   cmake .. && make
-   ```
-
-### 9. Funcionalidades Avanzadas
-
-#### 🎨 **Temas y Personalización**
-- **Modo oscuro/claro:** Botón en barra de herramientas
-- **Números de línea:** Ctrl+Shift+L
-- **Fuentes personalizables:** En configuración
-
-#### 📄 **Plantillas**
-- **Predefinidas:** Blog, documento técnico, README
-- **Personalizadas:** Crear nuevas plantillas
-- **Gestión:** Guardar y cargar plantillas
-
-#### 🔄 **Exportación**
-- **HTML:** Vista previa exportable  
-- **PDF:** Generación directa desde la aplicación
-- **Markdown:** Formato nativo
-
-### 10. Información del Proyecto
-
-#### 📊 **Estadísticas**
-- **Lenguaje:** C++17
-- **Framework:** Qt6
-- **Líneas de código:** ~2000+ líneas
-- **Archivos fuente:** 6 archivos .cpp principales
-- **Dependencias:** Qt6, libcmark, CMake
-
-#### 🎯 **Estado del Proyecto**
-- ✅ **Compilación:** 100% exitosa
-- ✅ **Funcionalidades:** Completas y probadas
-- ✅ **Pantalla completa:** Implementada
-- ✅ **Bandeja del sistema:** Funcionando
-- ✅ **Compatibilidad Qt6:** Actualizada
-
-#### 📜 **Licencia**
-Proyecto de código abierto para uso educativo y personal.
-
-#### 👨‍💻 **Autor**
-Desarrollado como proyecto personal de editor de Markdown con Qt6.
-
----
-
-## 🚀 **¡PROYECTO LISTO!**
-
-**Para usar inmediatamente:**
-```bash
-# Método rápido
+# Probar cambios
 ./ejecutar.sh
-
-# Método manual  
-cd build && ./Escribe_Chanchi
 ```
 
-**¡Disfruta editando Markdown con Escribe Chanchi!** ✨
+## 📄 Licencia
 
-1. **Ejecutar el programa:**
-   ```bash
-   ./markdown_editor
-   ```
+Este proyecto está bajo licencia MIT. Ver archivo `LICENSE` para más detalles.
 
-2. **Crear nuevo documento:** Usar `Ctrl+N` o menú "Archivo → Nueva pestaña"
+## 🌟 Agradecimientos
 
-3. **Abrir archivo existente:** Usar `Ctrl+O` o menú "Archivo → Abrir"
-
-4. **Usar barra de herramientas:** Acceso rápido a formato (negrita, cursiva, etc.)
-
-5. **Aplicar plantillas:** Menú "Plantillas" para usar o crear plantillas
-
-6. **Cambiar tema:** Usar `F11` o menú "Vista → Modo oscuro"
-
-## ⌨️ Atajos de Teclado
-
-| Atajo | Función |
-|-------|---------|
-| `Ctrl+N` | Nueva pestaña |
-| `Ctrl+O` | Abrir archivo |
-| `Ctrl+S` | Guardar |
-| `Ctrl+Shift+S` | Guardar como |
-| `Ctrl+W` | Cerrar pestaña |
-| `Ctrl+B` | Texto en negrita |
-| `Ctrl+I` | Texto en cursiva |
-| `Ctrl+U` | Texto subrayado |
-| `F11` | Alternar modo oscuro |
-
-## 🔧 Solución de Problemas
-
-### Error: "QApplication: No existe el archivo"
-```bash
-sudo apt install qtbase5-dev
-```
-
-### Error: "libcmark not found"
-```bash
-sudo apt install libcmark-dev
-```
-
-### Error de permisos de ejecución
-```bash
-chmod +x markdown_editor
-```
-
-### ⚠️ Problemas de Ventana
-
-**La aplicación se abre en pantalla completa y no puedo desmaximizar:**
-- **Solución:** La aplicación ahora inicia MAXIMIZADA (no en pantalla completa)
-- Usa los botones de ventana normales para minimizar/restaurar
-- Presiona F11 para alternar pantalla completa verdadera
-- Doble clic en la barra de título para desmaximizar
-
-**No aparece el icono en la bandeja del sistema:**
-- Verifica que tu entorno de escritorio soporte la bandeja del sistema
-- En algunos entornos, puede estar oculta en la configuración del panel
-
-**La ventana no responde correctamente:**
-- Reinicia la aplicación
-- Verifica que no haya conflictos con gestores de ventana
-
-### Limpiar compilación corrupta
-```bash
-make clean
-qmake markdown_editor.pro
-make
-```
+- **Qt Framework** - Por la excelente biblioteca de desarrollo
+- **libcmark** - Por el procesamiento robusto de Markdown
+- **Comunidad Open Source** - Por inspiración y herramientas
 
 ---
-**EscribeChanchi** - Editor de Markdown profesional y multiplataforma
+
+**EscribeChanchi v1.6** - Editor de Markdown moderno con barra de herramientas mejorada y sistema completo de búsqueda ✨
+
+**📦 Repositorio:** https://github.com/sapoclay/escribe-chanchi
+
+

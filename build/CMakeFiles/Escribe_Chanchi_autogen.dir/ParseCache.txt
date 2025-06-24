@@ -1405,6 +1405,7 @@
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport/qtprintsupport-config.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport/qtprintsupportexports.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport/qtprintsupportglobal.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFileDialog
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFormLayout
@@ -1435,6 +1436,7 @@
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qfiledialog.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qformlayout.h

@@ -31,6 +31,8 @@
 #include <QCloseEvent>
 #include <QSystemTrayIcon>
 #include <QMenu>
+#include <QLineEdit>
+#include <QCheckBox>
 #include "markdown_formatter.h"
 #include "template_manager.h"
 
@@ -81,6 +83,15 @@ private slots:
     void toggleFullScreen();   // Alternar pantalla completa
     void showTemplates();      // Mostrar plantillas
     void createTemplate();     // Crear nueva plantilla
+    void insertEmoji();        // Insertar emoji
+    
+    // Funcionalidades de búsqueda y reemplazo
+    void showFindDialog();     // Mostrar diálogo de búsqueda
+    void showReplaceDialog();  // Mostrar diálogo de reemplazo
+    void findNext();           // Buscar siguiente
+    void findPrevious();       // Buscar anterior
+    void replaceNext();        // Reemplazar siguiente
+    void replaceAll();         // Reemplazar todo
     
     // Slots para manejo de pestañas
     void newTab();             // Crear nueva pestaña
@@ -130,6 +141,15 @@ private:
     bool showLineNumbers;
     int untitledCounter;       // Contador para archivos sin título
     bool isFullScreenMode;     // Estado de pantalla completa
+    
+    // Variables para búsqueda y reemplazo
+    QDialog *findDialog;       // Diálogo de búsqueda
+    QDialog *replaceDialog;    // Diálogo de reemplazo
+    QLineEdit *findLineEdit;   // Campo de texto para búsqueda
+    QLineEdit *replaceLineEdit; // Campo de texto para reemplazo
+    QString lastSearchText;    // Último texto buscado
+    bool caseSensitive;        // Búsqueda sensible a mayúsculas
+    bool wholeWords;           // Buscar solo palabras completas
     
     // Variables para la bandeja del sistema
     QSystemTrayIcon *trayIcon;

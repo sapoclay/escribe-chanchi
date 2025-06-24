@@ -504,6 +504,10 @@ CMakeFiles/Escribe_Chanchi.dir/Escribe_Chanchi_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSystemTrayIcon \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsystemtrayicon.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
  /var/www/html/C++/markdown/build/Escribe_Chanchi_autogen/EWIEGA46WW/../../../markdown_formatter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTextCursor \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
@@ -524,8 +528,6 @@ CMakeFiles/Escribe_Chanchi.dir/Escribe_Chanchi_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFile \

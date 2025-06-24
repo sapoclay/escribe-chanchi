@@ -492,6 +492,7 @@ Escribe_Chanchi_autogen/timestamp: /usr/bin/cmake \
   /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/QWebEngineView \
   /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/qtwebenginewidgetsglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/qwebengineview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFileDialog \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFormLayout \
@@ -522,6 +523,7 @@ Escribe_Chanchi_autogen/timestamp: /usr/bin/cmake \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qfiledialog.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qformlayout.h \
@@ -1425,6 +1427,7 @@ Escribe_Chanchi_autogen/timestamp: /usr/bin/cmake \
   /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/QWebEngineView \
   /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/qtwebenginewidgetsglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/qwebengineview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFileDialog \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFormLayout \
@@ -1455,6 +1458,7 @@ Escribe_Chanchi_autogen/timestamp: /usr/bin/cmake \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qfiledialog.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qformlayout.h \
@@ -1908,8 +1912,6 @@ Escribe_Chanchi_autogen/moc_predefs.h:
 
 /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
 
-/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake:
-
 /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp:
 
 /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in:
@@ -2087,8 +2089,6 @@ Escribe_Chanchi_autogen/moc_predefs.h:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryPollPluginTargets.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryPollPluginTargets-none.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryNmeaPluginTargets.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryNmeaPluginConfig.cmake:
 
@@ -2288,6 +2288,8 @@ Escribe_Chanchi_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qspinbox.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h:
+
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
@@ -2447,6 +2449,10 @@ Escribe_Chanchi_autogen/moc_predefs.h:
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h:
+
+/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
@@ -3292,6 +3298,10 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryNmeaPluginTargets.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox:
+
 /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydatapointer.h:
@@ -3339,6 +3349,16 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlTools/Qt6QmlToolsConfigVersionImpl.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h:
+
+/usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QDebugMessageServiceFactoryPluginTargets.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryGeoclue2PluginAdditionalTargetInfo.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebenginepage.h:
 
@@ -3663,15 +3683,3 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QInputDialog:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QDebugMessageServiceFactoryPluginTargets.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryGeoclue2PluginAdditionalTargetInfo.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h:
