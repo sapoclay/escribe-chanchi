@@ -71,9 +71,19 @@ sudo pacman -S base-devel qt5-base qt5-webkit cmark cmake git
 # El editor se abrirá maximizado y listo para usar
 ```
 
-### Instalar usando el paquete .DEB
+### 📦 Instalar usando el paquete .DEB
 ![lanzador-escribe-chanchi](https://github.com/user-attachments/assets/64d584a3-894b-495a-89cf-af69ec02ed16)
 
+La opción más sencilla para probar este programa será usar el paquete .deb que he dejando en la [página de lanzamientos de este repositorio](https://github.com/sapoclay/escribe-chanchi/releases/tag/1.6_Versi%C3%B3n)
+
+Una vez descargado el paquete debería ser suficiente con abrir una terminal (Ctrl+Alt+T) y ejecutar en ella:
+```bash
+sudo dpkg -i escribe_chanchi_*.deb
+
+# En caso de haber algún problema con dependencias, deberían solucionarse escribiendo en la misma terminal:
+
+sudo apt-get install -f
+```
 
 ## 💡 Cómo Usar el Editor
 
