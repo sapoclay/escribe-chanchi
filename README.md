@@ -22,8 +22,6 @@ sudo apt install build-essential qt5-default libqt5webkit5-dev libcmark-dev cmak
 # 4. Ejecutar automáticamente  
 ./ejecutar.sh
 
-![lanzador-escribe-chanchi](https://github.com/user-attachments/assets/64d584a3-894b-495a-89cf-af69ec02ed16)
-
 # ¡Listo! 🚀 El editor se abre maximizado y listo para usar
 ```
 
@@ -72,6 +70,10 @@ sudo pacman -S base-devel qt5-base qt5-webkit cmark cmake git
 
 # El editor se abrirá maximizado y listo para usar
 ```
+
+### Instalar usando el paquete .DEB
+![lanzador-escribe-chanchi](https://github.com/user-attachments/assets/64d584a3-894b-495a-89cf-af69ec02ed16)
+
 
 ## 💡 Cómo Usar el Editor
 
